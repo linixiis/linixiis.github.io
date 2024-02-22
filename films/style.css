@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "Playfair";
+    src: url(fons/PlayfairDisplay-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(fons/PlayfairDisplay-Medium.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(fons/PlayfairDisplay-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(fons/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(fons/Montserrat-Medium.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(fons/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+html {
+    background-color: lightpink;
+}
+body {
+    margin: 0 auto;
+    background-color: rgb(255, 241, 211);
+    padding: 20px 20px 20px 20px;
+    border: 5px solid gray;
+}
+.header {
+    color: gray;
+    font-weight: bold;
+}
+.name {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(66, 64, 64);
+    font-weight: 700;
+}
+.films {
+    display: flex;
+}
+.image {
+    width: 400px;
+    height: 600px;
+    display: block;
+overflow: hidden;
+}
+.image:hover img{
+scale: 1.05;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.film {
+   width: 400px;
+   margin: 50px; 
+}
+.fees {
+    font-family: "Montserrat";
+    color: rgb(255, 17, 0);
+    font-size: 25px;
+    font-weight: 700;
+}
+.description {
+    width: 800px;
+    font-family: "Montserrat";
+    color: rgb(68, 63, 63);
+    font-size: 20px;
+    text-align: justify;
+}
+.description a {
+    text-decoration: none;
+    color: rgb(68, 24, 24);
+    font-weight: 700;
+    display: block;
+    width: fit-content;
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(109, 108, 108);
+  }
+h2 {
+    text-decoration: none;
+    color: rgb(68, 24, 24);
+    font-weight: 700;
+    display: block;
+    width: fit-content;
+    font-family: "Montserrat";
+}
+h3 {
+    color:blanchedalmond;
+    font-family: "Playfair";
+    font-weight: 700;
+}
+h4 {
+    color:rgb(218, 106, 124);
+}
+p {
+    color:black;
+}
+.actors {
+    width: 800px;
+    font-family: "Montserrat";
+    color: rgb(68, 63, 63);
+    font-size: 20px;
+}
+.age {
+    text-decoration: none;
+    color: rgb(68, 24, 24);
+    font-weight: 700;
+    display: block;
+    width: fit-content; 
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.time{
+    text-decoration: none;
+    color: rgb(68, 24, 24);
+    font-weight: 700;
+    display: block;
+    width: fit-content; 
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.block{
+    display: flex;
+}
+.info{
+    width: 500px;
+    display: block;
+    margin: 50px;
+}
+body .swiper {
+    width: 800px;
+    height: 500px;
+    margin: 50px 0 ;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.back {
+    text-decoration: none;
+    color: rgb(68, 24, 24);
+    font-weight: 700;
+    display: flex;
+    width: fit-content;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.back::before {
+    content: "";
+    display: block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background: url("images/arrow.svg");
+  }
+.accordion-header {
+    border-bottom: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 20px ;
+    color: rgb(236, 126, 0);
+    font-weight: 700;
+    font-family: "Montserrat";
+    width: 400px;
+    font-size: 30px;
+}
+.accordion-content {
+    display: none;
+}
+.accordion-content.active {
+    display: block;
+    width: 800px;
+    font-family: "Montserrat";
+    color: rgb(68, 63, 63);
+    font-size: 20px;
+}
+.accordion-content.active a {
+    text-decoration: none;
+    color: rgb(255, 72, 0);
+    font-weight: 700;
+    display: block;
+    width: fit-content;
+}
