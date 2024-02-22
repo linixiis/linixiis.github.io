@@ -49,12 +49,13 @@ body {
 }
 .films {
     display: flex;
+    flex-wrap: wrap;
 }
 .image {
     width: 400px;
     height: 600px;
     display: block;
-overflow: hidden;
+    overflow: hidden;
 }
 .image:hover img{
 scale: 1.05;
@@ -76,7 +77,7 @@ scale: 1.05;
     font-weight: 700;
 }
 .description {
-    width: 800px;
+    width: 350px;
     font-family: "Montserrat";
     color: rgb(68, 63, 63);
     font-size: 20px;
@@ -199,3 +200,19 @@ body .swiper {
     display: block;
     width: fit-content;
 }
+@media (max-width: 800px) {
+    .film {
+      width: 100%;
+      margin: 40px 0;
+    }
+    .description {
+      max-width: 100%;
+    }
+    .image {
+        width: 100%; 
+        height: auto;
+    }
+    .image img {
+        height: auto;
+    }
+  }
