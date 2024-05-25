@@ -97,6 +97,9 @@ html {
     width: 100%;
     height: 100%;
 }
+.banner__img_mobile{
+    display: none;
+}
 .banner__img-text {
     position: absolute;
     top: 50%;
@@ -298,6 +301,10 @@ span.swiper-pagination-bullet-active{
     }
     .banner__img {
         height: unset;
+        display: none;
+    }
+    .banner__img_mobile{
+        display: initial;
     }
     .banner__img-text {
         max-width: 90%;
@@ -318,5 +325,30 @@ span.swiper-pagination-bullet-active{
         text-align: center;
         margin: 50px 0 0 ;
     }
-    
+    .poster__image img{
+        max-width: 80%;
+        margin: 0 auto 50px;
+    }
+    .poster__info{
+       
+    }
+    .footer__wrapper{
+        flex-direction: column;
+       align-items: flex-start;
+    }
+    .footer__text1{
+        font-size: 14px;
+        margin: 20px 0 0;
+    }
+    .footer__text2 {
+        font-size: 12px;
+        margin: 15px 0 0;
+    }
+    .footer__img{
+        width: 100px;
+    }
+    .footer__wrapper{
+        padding: 65px 20px;
+    }
+   
 }
