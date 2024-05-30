@@ -26,10 +26,12 @@
 
 *{
     margin: 0;
+    padding: 0;
+    border: none;
     font-family: "Montserrat";
 }
 html {
-   
+   display: block;
 }
 
 .author {
@@ -320,17 +322,36 @@ span.swiper-pagination-bullet-active{
      margin: 50px 0 0;
     font-size: 14px;
     } 
+    .poster {
+        background-color:#181414;
+    }
     .posters h1 {
         font-size: 30px;
         text-align: center;
         margin: 50px 0 0 ;
+    }
+    .poster__content{
+       
     }
     .poster__image img{
         max-width: 80%;
         margin: 0 auto 50px;
     }
     .poster__info{
-       
+        position: unset;
+        background-color:#181414;
+        padding: 30px;
+        margin-top: -210px ;
+    }
+    .poster__text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .poster__percents{
+        font-size: 60px;
+    }
+    .poster__fact{
+        font-size: 12px;
     }
     .footer__wrapper{
         flex-direction: column;
