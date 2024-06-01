@@ -329,7 +329,7 @@ span.swiper-pagination-bullet-active{
         overflow: hidden;
         font-size: 0;
         float: right;
-        margin: 10px 10px 0 0;
+        margin: 15px 15px 0 0;
       }
       .menu__burger span {
         position: absolute;
