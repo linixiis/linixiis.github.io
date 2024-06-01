@@ -299,6 +299,81 @@ span.swiper-pagination-bullet-active{
 }
 
 @media (max-width: 768px) {
+    .menu-list li {
+        text-align: end;
+    }
+    .menu-list {
+        gap: 10px;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+        display: none;
+    }
+    .menu-list__open {
+        display: flex;
+    }
+    .menu {
+        display: flex;
+        flex-direction:column ;
+        align-items: flex-end;
+    }
+    .menu__burger {
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-size: 0;
+        float: right;
+        margin: 10px 10px 0 0;
+      }
+      .menu__burger span {
+        position: absolute;
+        display: block;
+        background-color: #fff
+          ;
+        height: 4px;
+        width: 30px;
+        top: 18px;
+        left: 5px;
+        right: 5px;
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+      .menu__burger span::after,
+      .menu__burger span::before {
+        position: absolute;
+        display: block;
+        height: 4px;
+        background-color: #fff;
+        content: '';
+        width: 100%;
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+      .menu__burger span::after {
+        top: -10px;
+      }
+      .menu__burger span::before {
+        bottom: -10px;
+      }
+      .menu__burger.close span {
+        background-color: transparent;
+        transition: 0.5s;
+      }
+      .menu__burger.close span::after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: 0.5s;
+      }
+      .menu__burger.close span::before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: 0.5s;
+      }
     .banner {
         height: unset;
     }
@@ -314,9 +389,6 @@ span.swiper-pagination-bullet-active{
     }
     .header img {
        width: 60px;
-    }
-    .menu {
-      display: none;
     }
     .about__emotions{
      width: unset;  
