@@ -263,6 +263,7 @@ span.swiper-pagination-bullet-active{
 .poster__percents{
     font-size: 120px;
     font-family: "Jomhuria";
+    text-wrap: nowrap;
 }
 .poster__percents span{
     font-size: 13px;
