@@ -17,3 +17,10 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  burger = document.querySelector('#burger');
+  menu = document.querySelector('#menu');
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('close')
+    menu.classList.toggle('menu-list__open')
+  })
