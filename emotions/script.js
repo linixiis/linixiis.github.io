@@ -19,8 +19,10 @@ const swiper = new Swiper('.swiper', {
   });
 
   burger = document.querySelector('#burger');
+  menu_list = document.querySelector('#menu-list');
   menu = document.querySelector('#menu');
   burger.addEventListener('click', function() {
     burger.classList.toggle('close')
-    menu.classList.toggle('menu-list__open')
+    menu_list.classList.toggle('menu-list__open')
+    menu.classList.toggle('menu_bg')
   })
