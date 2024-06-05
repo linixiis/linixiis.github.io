@@ -430,6 +430,8 @@ span.swiper-pagination-bullet-active{
     }
     .poster__fact{
         font-size: 12px;
+        max-width: 75%;
+        text-wrap: pretty;
     }
     .footer__wrapper{
         flex-direction: column;
