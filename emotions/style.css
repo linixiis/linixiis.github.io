@@ -308,33 +308,47 @@ span.swiper-pagination-bullet-active{
         text-align: end;
     }
     .menu-list {
-        gap: 10px;
+        gap: 40px;
         margin: 0;
         flex-direction: column;
         padding: 0;
-        display: none;
         margin-top: 10px;
+        height: 100%;
+        justify-content: center;
     }
     .menu-list__open {
         display: flex;
     }
     .menu {
+        position: fixed;
         display: flex;
         flex-direction:column ;
         align-items: flex-end;
+        right: -155px;
+        width: fit-content;
+        z-index: 2;
+        height: 100%;
+        transition: right 0.3s;
+        background: rgba(24, 20, 20, 0.8);
+    }
+    .menu_bg {
+        right: 0;
     }
     .menu__burger {
         display: block;
         cursor: pointer;
         width: 40px;
         height: 40px;
-        position: relative;
+        position: fixed;
+        top: 0;
+        right: 0;
         margin: 0;
         padding: 0;
         overflow: hidden;
         font-size: 0;
         float: right;
         margin: 15px 15px 0 0;
+        z-index: 3;
       }
       .menu__burger span {
         position: absolute;
