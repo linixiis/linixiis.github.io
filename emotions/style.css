@@ -419,6 +419,7 @@ span.swiper-pagination-bullet-active{
     }
     .poster__numbers{
         gap: 20px;
+        flex-wrap: wrap;
     }
     .poster__text{
         font-size: 14px;
