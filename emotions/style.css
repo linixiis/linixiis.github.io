@@ -407,9 +407,6 @@ span.swiper-pagination-bullet-active{
         text-align: center;
         margin: 50px 0 0 ;
     }
-    .poster__content{
-       
-    }
     .poster__image img{
         max-width: 80%;
         margin: 0 auto 50px;
@@ -419,6 +416,9 @@ span.swiper-pagination-bullet-active{
         background-color:#181414;
         padding: 30px;
         margin-top: -210px ;
+    }
+    .poster__numbers{
+        gap: 20px;
     }
     .poster__text{
         font-size: 14px;
