@@ -283,10 +283,12 @@ span.swiper-pagination-bullet-active{
     width: 100%;
     background-color:#181414;
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 .poster__image img{
     max-width: 600px;
-    margin: 0 auto 200px;
+    margin: -400px auto 200px;
 }
 .header {
     position: fixed;
