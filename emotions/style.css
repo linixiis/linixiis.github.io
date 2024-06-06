@@ -174,7 +174,7 @@ html {
     color: rgb(180, 1, 1);
 }
 .yellow {
-    color: gold;
+    color: rgb(255, 215, 0);
 }
 .green {
     color: rgb(105, 128, 66);
@@ -324,7 +324,8 @@ span.swiper-pagination-bullet-active{
         display: flex;
         flex-direction:column ;
         align-items: flex-end;
-        right: -155px;
+        right: -195px;
+        padding-left: 30px;
         width: fit-content;
         z-index: 2;
         height: 100%;
@@ -349,8 +350,8 @@ span.swiper-pagination-bullet-active{
         float: right;
         margin: 15px 15px 0 0;
         z-index: 3;
-      }
-      .menu__burger span {
+    }
+    .menu__burger span {
         position: absolute;
         display: block;
         background-color: #fff
@@ -362,9 +363,9 @@ span.swiper-pagination-bullet-active{
         right: 5px;
         transition: 0.5s;
         border-radius: 5px;
-      }
-      .menu__burger span::after,
-      .menu__burger span::before {
+    }
+    .menu__burger span::after,
+    .menu__burger span::before {
         position: absolute;
         display: block;
         height: 4px;
@@ -373,27 +374,30 @@ span.swiper-pagination-bullet-active{
         width: 100%;
         transition: 0.5s;
         border-radius: 5px;
-      }
-      .menu__burger span::after {
+    }
+    .menu__burger span::after {
         top: -10px;
-      }
-      .menu__burger span::before {
+    }
+    .menu__burger span::before {
         bottom: -10px;
-      }
-      .menu__burger.close span {
+    }
+    .menu__burger.close span {
         background-color: transparent;
         transition: 0.5s;
-      }
-      .menu__burger.close span::after {
+    }
+    .menu__burger.close span::after {
         top: 0;
         transform: rotate(45deg);
         transition: 0.5s;
-      }
-      .menu__burger.close span::before {
+    }
+    .menu__burger.close span::before {
         bottom: 0;
         transform: rotate(-45deg);
         transition: 0.5s;
-      }
+    }
+    .link {
+        padding: 20px;
+    }
     .banner {
         height: unset;
     }
